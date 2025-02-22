@@ -1,0 +1,74 @@
+.list-of-like_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  column-gap: 7px;
+}
+
+.card__icon-button {
+  background-color: var(--main-color);
+  border: none;
+  padding: 0;
+  block-size: 27px;
+  outline-color: transparent;
+  transition: outline-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: solid 2px var(--accent-color);
+}
+
+.like-icon {
+  inline-size: 27px;
+}
+
+.sparks {
+  fill-opacity: 0;
+}
+
+.button_transition {
+  border: 2px solid #000000;
+  transition: box-shadow 0.3s ease, transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 31.6px;
+  padding-block-start: 5px;
+  background-color: var(--main-color);
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: var(--label-and-button_text-size);
+  transition: mix-blend-mode 1s;
+  color: var(--main-color);
+  mix-blend-mode: difference;
+}
+
+.save_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  column-gap: 8px;
+  margin-bottom: 103px;
+  background-color: var(--main-color);
+}
+
+.save_icon {
+  height: 21px;
+  mix-blend-mode: difference;
+  color: var(--main-color);
+}
+
+.dialog_button {
+  background-color: inherit;
+  padding-block: 12px;
+  text-transform: inherit;
+}

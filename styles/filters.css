@@ -1,0 +1,23 @@
+.blur {
+  filter: blur(3px);
+}
+
+.hue-rotate {
+  filter: hue-rotate(158deg);
+}
+
+.saturate {
+  filter: saturate(5.5);
+}
+
+.brightness {
+  filter: brightness(2);
+}
+
+.sepia {
+  filter: sepia(0.3);
+}
+
+.contrast {
+  filter: contrast(1.5);
+}

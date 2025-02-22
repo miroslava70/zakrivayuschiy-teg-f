@@ -4,13 +4,142 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
 
 .page {
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--text-size);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--main-color);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  font-variation-settings: "wght" var(--font-weight), "opsz" auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  margin-block: 100px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 128px;
+}
+
+.main_heading {
+  font-size: var(--header_heading-size);
+  font-weight: var(--heading-weight);
+  padding-block-end: 20px;
+}
+
+.main_heading-title {
+  font-size: var(--heading_title-size);
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  inline-size: var(--section-width);
+  border: var(--accent-color) 2px solid;
+  position: relative;
+  background-color: var(--main-color);
+}
+
+.card_heading {
+  font-weight: var(--card_heading-weight);
+  padding-inline: 10px;
+  font-size: var(--text-size);
+  padding-block: 3.5px;
+}
+
+.card_image-border {
+  outline: 2px var(--accent-color) solid;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.label {
+  position: absolute;
+  font-family: var(--accent-font);
+  font-size: var(--label-and-button_text-size);
+  right: 3.7%;
+  top: 45px;
+  text-shadow: var(--main-color) 0px 0.2px, var(--main-color) 0px -0.2px,
+    var(--main-color) 0.2px 0px, var(--main-color) -0.2px 0px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+@supports (-webkit-text-stroke: var(--main-color) 0.5px) {
+  .label {
+    -webkit-text-stroke: var(--main-color) 0.5px;
+  }
+}
+
+.card_content {
+  padding: 25px;
+}
+
+.card_text {
+  display: flex;
+  padding-block-end: 25px;
+  row-gap: 27px;
+  flex-direction: column;
+}
+
+.card_margin-bottom {
+  margin-block-end: 50px;
+}
+
+#needs-a-floppy {
+  font-family: var(--accent-font);
+  width: min(90.94%, 353px);
+  height: 191px;
+  padding: 30px;
+  position: fixed;
+  inset-block: 0;
+  text-transform: uppercase;
+}
+
+#needs-a-floppy[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page:has(#needs-a-floppy[open]) {
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog_icon {
+  width: 39px;
+  height: 39px;
+}
+
+.dialog_text {
+  display: grid;
+  grid-template-columns: 0fr 2fr;
+  column-gap: 20px;
+  align-items: center;
 }

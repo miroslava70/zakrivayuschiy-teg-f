@@ -1,0 +1,20 @@
+@media (width <= 375px) {
+  .header {
+    padding-block: 120.4px;
+  }
+
+  .main_heading {
+    letter-spacing: 1px;
+  }
+
+  .save_button {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 8px;
+    margin-bottom: 100px;
+  }
+
+  .save_icon {
+    height: 28px;
+  }
+}

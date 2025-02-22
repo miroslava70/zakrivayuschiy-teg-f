@@ -1,1 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: Inter;
+  --accent-font: "Press Start 2P";
+  --header_heading-size: clamp(2.875rem, 2.3713rem + 2.6426vw, 4.0625rem);
+  --heading_title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --label-and-button_text-size: 14px;
+  --text-size: 18px;
+  --font-weight: 400;
+  --card_heading-weight: 700;
+
+  --main-color: #fff;
+  --accent-color: #000;
+  --bg-gradient: repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --like-color: #ff0000;
+
+  --section-width: min(91%, 700px);
+}
+
+@media (width <= 375px) {
+  :root {
+    --section-width: 100%;
+  }
+}
