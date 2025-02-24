@@ -6,8 +6,8 @@
   filter: hue-rotate(158deg);
 }
 
-.saturate_and_brightness {
-  filter: saturate(5.5) brightness(2);
+.saturate {
+  filter: saturate(5.5);
 }
 
 .brightness {
