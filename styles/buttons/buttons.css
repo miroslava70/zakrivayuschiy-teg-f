@@ -23,7 +23,7 @@
 }
 
 .like-icon {
-  inline-size: 27px;
+  inline-size: 36px;
 }
 
 .sparks {
@@ -38,13 +38,13 @@
 
 .card__like-button {
   width: 130px;
-  height: 31.6px;
-  padding-block-start: 5px;
+  height: 38px;
+  padding-block: 8px;
   background-color: var(--main-color);
 }
 
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: var(--label-and-button_text-size);
   transition: mix-blend-mode 1s;
   color: var(--main-color);

@@ -18,14 +18,14 @@
   background-image: var(--bg-gradient);
   background-attachment: fixed;
   background-size: cover;
-  font-variation-settings: "wght" var(--font-weight), "opsz" auto;
+  font-variation-settings: "wght" var(--font-weight);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   margin-block: 100px;
   display: inherit;
@@ -37,7 +37,7 @@
 
 .main_heading {
   font-size: var(--header_heading-size);
-  font-weight: var(--heading-weight);
+  font-weight: var(--font-weight);
   padding-block-end: 20px;
 }
 
@@ -59,10 +59,11 @@
 }
 
 .card_heading {
-  font-weight: var(--card_heading-weight);
+  font-variation-settings: "wght" var(--card_heading-weight);
   padding-inline: 10px;
   font-size: var(--text-size);
-  padding-block: 3.5px;
+  padding-block: 5.4px 6px;
+  line-height: 1.2em;
 }
 
 .card_image-border {
@@ -77,10 +78,10 @@
 
 .label {
   position: absolute;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: var(--label-and-button_text-size);
   right: 3.7%;
-  top: 45px;
+  top: 58px;
   text-shadow: var(--main-color) 0px 0.2px, var(--main-color) 0px -0.2px,
     var(--main-color) 0.2px 0px, var(--main-color) -0.2px 0px;
   opacity: 0.5;
@@ -89,12 +90,14 @@
 
 @supports (-webkit-text-stroke: var(--main-color) 0.5px) {
   .label {
+    text-shadow: none;
     -webkit-text-stroke: var(--main-color) 0.5px;
   }
 }
 
 .card_content {
   padding: 25px;
+  padding-block-start: 27px;
 }
 
 .card_text {
@@ -109,9 +112,9 @@
 }
 
 #needs-a-floppy {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   width: min(90.94%, 353px);
-  height: 191px;
+  min-height: 191px;
   padding: 30px;
   position: fixed;
   inset-block: 0;
@@ -121,7 +124,7 @@
 #needs-a-floppy[open] {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 30px;
 }
 
 .page:has(#needs-a-floppy[open]) {
@@ -142,4 +145,6 @@ dialog::backdrop {
   grid-template-columns: 0fr 2fr;
   column-gap: 20px;
   align-items: center;
+  font-size: 14px;
+  line-height: 1.4em;
 }
