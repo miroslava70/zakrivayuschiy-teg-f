@@ -1,9 +1,3 @@
-@media (width <= 512px) {
-  .card_image-border:first-child .label {
-    top: 75px;
-  }
-}
-
 @media (width <= 375px) {
   .header {
     padding-block: 120.4px 119.2px;
@@ -12,6 +6,11 @@
   .main_heading {
     letter-spacing: 1px;
     padding-block-end: 21px;
+  }
+
+  .label {
+    right: 3%;
+    top: 23px;
   }
 
   .save_button {
