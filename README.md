@@ -10,4 +10,5 @@
 ## Авторы
 * Заготовка: Яндекс Практикум;
 * Собственная версия: Мирослава Зимонина;
+* Ссылка на сайт: https://miroslava70.github.io/zakrivayuschiy-teg-f/
 * Ссылка на репрозиторий: https://github.com/miroslava70/zakrivayuschiy-teg-f.git
