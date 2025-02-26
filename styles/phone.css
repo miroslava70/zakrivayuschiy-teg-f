@@ -23,4 +23,21 @@
   .save_icon {
     height: 28px;
   }
+
+  #needs-a-floppy {
+    padding: 30px 23px;
+  }
+
+  .dialog_icon {
+    margin-inline-start: 16.9px;
+  }
+
+  .dialog_text {
+    column-gap: 19.5px;
+  }
+
+  .dialog_button {
+    padding-block: 8.2px;
+    margin-inline: 17px;
+  }
 }

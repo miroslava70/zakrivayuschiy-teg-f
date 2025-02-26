@@ -1,15 +1,15 @@
 .list-of-like_buttons {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   column-gap: 7px;
 }
 
 .card__icon-button {
+  display: flex;
   background-color: var(--main-color);
   border: none;
   padding: 0;
-  block-size: 27px;
   outline-color: transparent;
   transition: outline-color 0.3s ease;
 }
@@ -23,7 +23,8 @@
 }
 
 .like-icon {
-  inline-size: 36px;
+  inline-size: 37px;
+  margin-block: 0.4px;
 }
 
 .sparks {
@@ -38,7 +39,8 @@
 
 .card__like-button {
   width: 130px;
-  height: 38px;
+  height: 39px;
+  margin-block-end: 1px;
   padding-block: 8px;
   background-color: var(--main-color);
 }
@@ -69,6 +71,7 @@
 
 .dialog_button {
   background-color: inherit;
-  padding-block: 8.5px;
+  padding-block: 7.9px;
+  margin-inline: 2.9px;
   text-transform: inherit;
 }
