@@ -114,8 +114,8 @@
 
 #needs-a-floppy {
   font-family: var(--accent-font), fantasy;
-  width: min(91.3%, 354px);
-  padding: 30px 28px 26px;
+  width: min(91.3%, 355px);
+  padding: 30px 28px 27px;
   position: fixed;
   inset-block: 0;
   text-transform: uppercase;
