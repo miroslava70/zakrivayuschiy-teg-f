@@ -114,8 +114,8 @@
 
 #needs-a-floppy {
   font-family: var(--accent-font), fantasy;
-  width: min(91.3%, 358px);
-  padding: 28px 27px 28px;
+  width: min(91.3%, 354px);
+  padding: 30px 28px 26px;
   position: fixed;
   inset-block: 0;
   text-transform: uppercase;
@@ -137,7 +137,6 @@ dialog::backdrop {
 
 .dialog_icon {
   width: 39.5px;
-  margin-inline-start: 2.4px;
 }
 
 .dialog_text {
